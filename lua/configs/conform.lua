@@ -1,8 +1,12 @@
 local options = {
   formatters_by_ft = {
+    dockerfile = { "deno_fmt" },
+    javascript = { "deno_fmt" },
+    json = { "deno_fmt" },
     lua = { "stylua" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    typescript = { "deno_fmt" },
+    vue = { "deno_fmt" },
+    yaml = { "deno_fmt" },
   },
 
   -- format_on_save = {

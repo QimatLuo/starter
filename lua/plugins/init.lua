@@ -13,13 +13,32 @@ return {
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      pkgs = {
+        "css-lsp",
+        "html-lsp",
+        "lua-language-server",
+        "lua-language-server",
+        "prettier",
+        "stylua",
+        "typescript-language-server",
+        "vue-language-server",
+      },
+    },
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "css",
+        "html",
+        "lua",
+        "vim",
+        "vimdoc",
+      },
+    },
+  },
 }

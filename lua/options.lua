@@ -1,6 +1,9 @@
 require "nvchad.options"
 
--- add yours here!
+vim.api.nvim_command([[
+set clipboard=
+]])
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+local o = vim.o
+o.relativenumber = true
+o.wrap = false
