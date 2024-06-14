@@ -1,8 +1,11 @@
 local options = {
   formatters_by_ft = {
+    dockerfile = { "prettier" },
+    json = { "prettier" },
     lua = { "stylua" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    typescript = { "prettier" },
+    vue = { "prettier" },
+    yaml = { "prettier" },
   },
 
   -- format_on_save = {
