@@ -1,10 +1,13 @@
 require "nvchad.mappings"
 
--- add yours here
-
 local map = vim.keymap.set
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
+map("n", "<SPACE><SPACE>y", ":%y+<CR>")
+map("n", "<SPACE>sp", ":set paste!<CR>")
+map("n", "<SPACE>tn", ":tabnew ")
+map("n", "<SPACE>y", '"+y')
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("v", "<SPACE>s", ":sort<CR>")
+map("v", "<SPACE>y", '"+y')
+
+-- vim.keymap.del("n", "<Alt>h")
