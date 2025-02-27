@@ -9,6 +9,7 @@ local servers = {
   "denols",
   "docker_compose_language_service",
   "dockerls",
+  "helm_ls",
   "html",
   "ts_ls",
   "volar",
@@ -36,6 +37,7 @@ lspconfig.denols.setup {
 
 lspconfig.ts_ls.setup {
   on_attach = nvlsp.on_attach,
+  root_dir = lspconfig.util.root_pattern('package.json'),
   single_file_support = false,
   init_options = {
     plugins = {
